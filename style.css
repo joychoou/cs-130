@@ -5,17 +5,67 @@
 
 body {
     margin: 0px;
-    font-family: Arial, sans-serif;
+    font-family: 'Prata', serif;
+    text-align: center;
+    background-color: #c2c5aa;
+    
 }
-header, section {
+header{
+    font-size: medium;
+}
+
+section {
     padding: 20px;
+    
 }
 p, li {
     line-height: 1.5em;
 }
-
-#inspiration {
-    background-color: #F0F0F0;
+#homework{
+    background-color: #b6ad90;
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
+#tutorials{
+    background-color: #a4ac86
+    ;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#inspiration {
+    background-color: #936639;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#lectures {
+    background-color: #a68a64;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+
+
+
+
+/* unvisited link */
+a:link {
+    color: black;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #414833;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #582f0e;
+  }
+  
+  /* selected link */
+  a:active {
+    color: black;
+  }
