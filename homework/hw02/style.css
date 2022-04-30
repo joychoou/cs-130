@@ -1,11 +1,15 @@
 body {
     font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
     color: #fff;
+    letter-spacing: 1px;
+    font-size: smaller;
 }
 a, a:hover, a:visited, a:active { 
     color: #fff;
     text-decoration: none;
+    
 }
+
 
 * {
     box-sizing: border-box;
@@ -82,6 +86,45 @@ footer {
 
 /* Your Code Here */
 
+.spotifyicon {
+    margin-left: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    
+}
+
+.container{
+    display: flex;
+    margin-left: 20px;
+    height: 38px;
+    justify-content: space-between; 
+    padding-left: 10px;
+}
+
+.your_library{
+    display: flex;
+    margin-left: 20px;
+    height: 38px;
+    justify-content: space-between; 
+    padding-left: 10px;
+}
+.selected, .search, .home{
+    margin-top: 10px;
+}
+
+
+div.your_library{
+    border-left: solid 2px green;
+}
+  
+  span:hover + .container {
+    display: block;
+  }
+
+.icon{
+    
+    width: 10px;
+}
 
 
 /********************************/
@@ -89,17 +132,158 @@ footer {
 /********************************/
 
 /* Your Code Here */
+.button{
+    background-color: transparent;
+    font-size: 1.1em;
+
+    color: hsla(0,0%,100%,.3);
+    border-radius: 30px;
+    border: 2px solid hsla(0,0%,100%,.3);
+    padding-bottom: 20px;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    list-style-type: none;
+    margin: 20px;
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: 0 20px;
+}
+
+.profile{
+    background-color: rgba(89, 89, 89, 0.145);
+    font-size: 1.1em;
+    color: hsla(0,0%,100%,.3);
+    border-radius: 30px;
+    border: 2px transparent;
+    padding-bottom: 20px;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    list-style-type: none;
+    margin: 20px;
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+}
+
+.artists{
+    border-bottom: green solid 2.5px;
+    margin-top: 10px;
+}
+.albums:hover, .playlists:hover{
+    border-bottom: green solid 2.5px;
+}
 
 
+header ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
 
+header ul li {
+    padding: 0 20px;
+}
 
+#upgrade:hover{
+    filter:brightness(300%)
+}
 
 /*************************/
 /* Part C: Artists Panel */
 /*************************/
 
 /* Your Code Here */
+.artist-card {
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: transparent;
+    padding: 30px;
+    margin: 10px;
+    width: 200px;
+    height: 280px;
 
+    display:flex;
+    
+    justify-content: flex-start;
+    
+    background-color: rgba(89, 89, 89, 0.145);
+    font-size: 1.0em;
+    color: white;
+   
+}
+
+
+
+#featured-content{
+    margin: 15px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* for artist name and button */
+.card-footer > p {
+    justify-content: left;
+    flex-wrap: wrap;
+    
+    
+}
+
+/* play button hover functions */
+.card-footer > button {
+    display:none;
+}
+.card-footer:hover > button {
+    display: block;
+    
+}
+
+
+.play-button {
+    border-radius: 30%;
+    display:block;
+    flex-direction: row;
+    
+    margin-left:90px;
+    margin-block-end: auto;
+    width: 50px;
+    height:50px;
+    color: white;
+    border:none;
+    border-radius:50px;
+    size: 20%;
+    background-color:green;
+    transition: 0.7s;
+}
+
+
+/*profile pic image adjustments */
+.profile-pic {
+    border-radius: 50%;
+    display: flex;
+    margin-left: auto;
+    margin-right:auto;
+    width: 100%;
+    height:auto;
+  }
 
 
 
@@ -109,4 +293,34 @@ footer {
 
 /* Your Code Here */
 
+/* tablet */
+@media screen and (max-width: 1000px){
+    .artist-card{
+        width: 33%;
+    }
+}
 
+@media screen and (max-width: 900px){
+    .artist-card{
+        width: 40%;
+        height:auto;
+    }
+}
+
+@media screen and (max-width: 700px){
+    body{
+        overflow:hidden;
+        margin: 0px;
+        display: grid;
+        grid-template-columns: auto;
+        height: 100vh;    
+    }
+    #sidebar{
+        display:none;
+        overflow: hidden;
+    }
+}
+
+
+       
+ 

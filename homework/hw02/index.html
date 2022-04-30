@@ -9,45 +9,66 @@
         <script type="text/javascript" src="scripts.js" defer></script>
     </head>
     <body id="container">
+
         <aside id="sidebar">
-            <h1>
-                <i class="fab fa-spotify"></i>
-                Spotify
-            </h1>
-            <a href="#">
-                <i class="fas fa-home"></i>
-                Home
-            </a>
-            <a href="#">
-                <i class="fas fa-search"></i>
-                Search
-            </a>
-            <a class="selected" href="#">
-                <i class="fas fa-headphones-alt"></i>
-                Your Library
-            </a>
+            <div class="spotifyicon">
+                <h1>
+                    <i class="fab fa-spotify"></i>
+                    Spotify
+                </h1>
+            </div>
+
+            <div class="container">
+                <a class='home' href="#">
+               <i class="fas fa-home"></i>
+                Home</a>
+            </div>
+
+            <div class="container">
+                <a class= 'search' href="#">
+                    <i class="fas fa-search"></i> 
+                    Search 
+                </a>
+            </div>
+
+            <div class="your_library">
+                <a class="selected" href="#">
+                    <i class="fas fa-headphones-alt"></i>
+                    Your Library
+                </a>
+            </div>
         </aside>
+
         <main>
             <header>
-                <a href="#" id="upgrade">Upgrade</a>
-                <a href="#" id="profile">
-                    <i class="far fa-user"></i> Profile</a>
+                <div class = "flex-container">
+                    <div class="button"><a href="#" id="upgrade">UPGRADE</a></div>
+                    <div class="profile"><a href="#" id="profile">
+                        <i class="far fa-user"></i> PROFILE
+                    </a></div>
+                </div>
+                
             </header>
+
             <nav>
-                <a href="#">Playlists</a>
-                <a href="#">Albums</a>
-                <a class="selected" href="#">Artists</a>
+                <ul>
+                    <li><a class= 'playlists' href="#">PLAYLISTS</a></li>
+                    <li><a class= 'albums'href="#">ALBUMS</a></li>
+                    <li><a class="artists" href="#">ARTISTS</a></li>
+                </ul>
             </nav>
+
             <article id="featured-content">
                 <section class="artist-card" tabindex="0">
                     <div>
                         <img 
-                            src="https://i.scdn.co/image/62b33d12e2b9a033cf77585f6e3d4b2c6b3a63a1" />
+                            src="https://i.scdn.co/image/62b33d12e2b9a033cf77585f6e3d4b2c6b3a63a1" class= "profile-pic" />
                         <div class="card-footer">
                             <div>
                                 <h2>Taylor Swift</h2>
                                 <p>Artist</p>
                             </div>
+                            
                             <button aria-label="play song" class="play-button"><i class="fas fa-play"></i></button>
                         </div>
                     </div>
@@ -56,7 +77,7 @@
                 <section class="artist-card" tabindex="0">
                     <div>
                         <img 
-                            src="https://i.scdn.co/image/0433f521b1fadf1d839b6e70c3914021f122901f" />
+                            src="https://i.scdn.co/image/0433f521b1fadf1d839b6e70c3914021f122901f" class= "profile-pic"/>
                         <div class="card-footer">
                             <div>
                                 <h2>Chance the Rapper</h2>
@@ -70,12 +91,13 @@
                 <section class="artist-card" tabindex="0">
                     <div>
                         <img 
-                            src="https://i.scdn.co/image/0c9057cb30520f9f883a220051260fc66a2f3ffa" />
+                            src="https://i.scdn.co/image/0c9057cb30520f9f883a220051260fc66a2f3ffa" class= "profile-pic"/>
                         <div class="card-footer">
                             <div>
                                 <h2>BTS</h2>
                                 <p>Artist</p>
                             </div>
+
                             <button aria-label="play song" class="play-button"><i class="fas fa-play"></i></button>
                         </div>
                     </div>
@@ -84,7 +106,7 @@
                 <section class="artist-card" tabindex="0">
                     <div>
                         <img 
-                            src="https://i.scdn.co/image/e33e4245fe5901ed940ba95070bb8d56679b6fe0" />
+                            src="https://i.scdn.co/image/e33e4245fe5901ed940ba95070bb8d56679b6fe0" class= "profile-pic" />
                         <div class="card-footer">
                             <h2>Lizzo</h2>
                             <p>Artist</p>
@@ -96,7 +118,7 @@
                 <section class="artist-card" tabindex="0">
                     <div>
                         <img 
-                            src="https://i.scdn.co/image/1fc2f537d678d701d7d143a8fd4f0c2f29fbde22" />
+                            src="https://i.scdn.co/image/1fc2f537d678d701d7d143a8fd4f0c2f29fbde22" class= "profile-pic" />
                         <div class="card-footer">
                             <h2>Rihanna</h2>
                                 <p>Artist</p>
@@ -108,7 +130,7 @@
                 <section class="artist-card" tabindex="0">
                     <div>
                         <img 
-                            src="https://i.scdn.co/image/b1dfbe843b0b9f54ab2e588f33e7637d2dab065a" />
+                            src="https://i.scdn.co/image/b1dfbe843b0b9f54ab2e588f33e7637d2dab065a"class= "profile-pic"/>
                         <div class="card-footer">
                             <h2>Ariana Grande</h2>
                             <p>Artist</p>
@@ -120,7 +142,7 @@
                 <section class="artist-card" tabindex="0">
                     <div>
                         <img 
-                            src="https://i.scdn.co/image/2622edec99d68d1d141886be593c88cbe509f6d8" />
+                            src="https://i.scdn.co/image/2622edec99d68d1d141886be593c88cbe509f6d8"class= "profile-pic" />
                         <div class="card-footer">
                             <h2>Billie Eilish</h2>
                             <p>Artist</p>
@@ -132,7 +154,7 @@
                 <section class="artist-card" tabindex="0">
                     <div>
                         <img 
-                            src="https://i.scdn.co/image/9fef2047e4e3f05031807d5fa9e121b7862ba259" />
+                            src="https://i.scdn.co/image/9fef2047e4e3f05031807d5fa9e121b7862ba259" class= "profile-pic"/>
                         <div class="card-footer">
                             <h2>Beyoncé</h2>
                             <p>Artist</p>
@@ -144,7 +166,7 @@
                 <section class="artist-card" tabindex="0">
                     <div>
                         <img 
-                            src="https://i.scdn.co/image/12d5ab979779aa41e697ce823328d527e643e4cf" />
+                            src="https://i.scdn.co/image/12d5ab979779aa41e697ce823328d527e643e4cf"class= "profile-pic" />
                         <div class="card-footer">
                             <h2>Lil Nas X</h2>
                             <p>Artist</p>
@@ -156,7 +178,7 @@
                 <section class="artist-card" tabindex="0">
                     <div>
                         <img 
-                            src="https://i.scdn.co/image/fec51156ed94b7ee30fbd4c7fd29b4a840e7daec" />
+                            src="https://i.scdn.co/image/fec51156ed94b7ee30fbd4c7fd29b4a840e7daec" class= "profile-pic"/>
                         <div class="card-footer">
                             <h2>Travis Scott</h2>
                             <p>Artist</p>
@@ -168,6 +190,7 @@
 
             </article>
         </main>
+
         <footer>
             <div class="current-song">
                 <img src="https://i.scdn.co/image/5d6e2a7429fa5e1b8b833b4e153c7a4f190dfe67">
