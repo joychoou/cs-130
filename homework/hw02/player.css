@@ -23,11 +23,11 @@ footer {
 }
 .current-song .label h2 {
     margin-bottom: 0px;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 .current-song .label p {
     color: #CCC;
-    font-size: 0.8em;
+    font-size: 1em;
     margin-top: 5px;
 }
 .player {
@@ -45,6 +45,7 @@ footer {
     align-self: center;
     align-items: center;
     margin-bottom: 10px;
+    
 }
 .player .controls button {
     background: transparent;
