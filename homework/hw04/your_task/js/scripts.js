@@ -37,7 +37,7 @@ const getTracks = (term) => {
 
 const getTrackHTML = (data) => {
     return `<button class="track-item preview" data-preview-track="https://p.scdn.co/mp3-preview/879c7106422b0b53852209da6a63210be7e09b01?cid=9697a3a271d24deea38f8b7fbfa0e13c" onclick="handleTrackClick(event);">
-    <img src="https://i.scdn.co/image/1aacaefb0ef07755e5a155d96ee7f1073063e428">
+    <img src="${data.album.image_url}">
     <i class="fas play-track fa-play" aria-hidden="true"></i>
     <div class="label">
         <h2>${data.name}</h2>
@@ -108,7 +108,7 @@ const getArtistHTML = (data) => {
     return `<section class="artist-card" id="${data.id}">
     <div>
         <img src="${data.image_url}">
-        <h2>BTS</h2>
+        <h2>${data.name}</h2>
         <div class="footer">
             <a href="${data.spotify_url}" target="_blank">
                 view on spotify
@@ -118,6 +118,8 @@ const getArtistHTML = (data) => {
 </section>`;
 
 };
+
+
 
 const handleTrackClick = (ev) => {
     const previewUrl = ev.currentTarget.getAttribute('data-preview-track');
