@@ -31,7 +31,6 @@ const getTracks = (term) => {
             for(const artistData of firstFive) {
                 elem.innerHTML += getTrackHTML(artistData);
         }
-
             });
 };
 
