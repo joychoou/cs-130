@@ -70,8 +70,6 @@ li .button:hover {
     font-weight: bolder;
     background-color: #6daa8c;
     border: #6daa8c;
-    
-
 }
 
 .flex-container {
@@ -100,7 +98,6 @@ nav ul li {
     margin-left: 20 px;
     
 }
-
 
 
 /* Home Page Section 1: we are here to help you */
@@ -155,6 +152,7 @@ nav ul li {
 
 /* text positioning in sec 1 */
 .sec1{
+    font-family: 'Raleway', sans-serif;
     display:flex;
     justify-content: center;
     padding: 10PX;
@@ -198,6 +196,7 @@ nav ul li {
 .section-2{
     background-color: #f2f2f2;
     padding:100px;
+    font-family: 'Raleway', sans-serif;
 
 }
 
@@ -242,6 +241,7 @@ card p {
     display:flex;
     justify-content: center;
     padding: 10px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .card-button{

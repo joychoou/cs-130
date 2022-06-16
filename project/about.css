@@ -1,0 +1,60 @@
+/* section 1 styling */
+body{
+    background-color: #cbe0cb;
+}
+.introduction{
+    padding: 60px;
+    display: inline-block;
+}
+
+ol > li{
+    padding:10px;
+}
+li{
+    padding: 10px;
+}
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 15px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  }
+  
+  #mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+  }
+  
+  /* The about link: 20px from the top with a green background */
+  #about {
+    top: 100px;
+    background-color: #89d0ac;
+  }
+  
+  #blog {
+    top: 200px;
+    background-color: #89d0ac; /* Blue */
+  }
+  
+  #projects {
+    top: 300px;
+    background-color: #89d0ac; /* Red */
+  }
+  
+  #contact {
+    top: 400px;
+    background-color: #89d0ac /* Light Black */
+  }
+
+/* section 2 styling */
+.diversity {
+    background-color:#e1f4e8;
+    padding: 60px;
+    display: inline-block;
+}
